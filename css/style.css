@@ -2,11 +2,13 @@
     --super-black-color: #000000;
     --black-color: #222222;
     --light-pink-color: #F1E4E6;
+    --breadcrumb-color: #F8F3F4;
     --pink-color: #F16D7F;
     --white-color: #FFFFFF;
     --grey-color: #9F9F9F;
     --dark-grey-color: #5D5D5D;
     --grey-white-color: #FBFBFB;
+    --placeholder-color: #B1B1B1;
 }
 
 .visually-hidden {
@@ -21,7 +23,7 @@
 }
 
 body {
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -66,6 +68,28 @@ body {
 
 .header__link {
     margin-left: 33px;
+}
+
+.header__link_cart {
+    position: relative;
+}
+
+.header__link_cart::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    content: '5';
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--white-color);
+    top: -21px;
+    right: -9px;
+    width: 19px;
+    height: 19px;
+    background-color: var(--pink-color);
+    border-radius: 50%;
+    text-decoration-line: none;
 }
 
 .site-nav {
@@ -113,11 +137,22 @@ body {
 }
 
 .brand__title {
+    position: relative;
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
     color: var(--black-color);
     text-transform: uppercase;
+}
+
+.brand__title::before {
+    content: '';
+    width: 12px;
+    height: 92px;
+    background-color: var(--pink-color);
+    position: absolute;
+    left: -28px;
+    background-size: 12px 92px;
 }
 
 .brand__subtitle {
@@ -335,7 +370,7 @@ body {
 }
 
 .footer__right-inner {
-    padding: 150px 97px 0 0;
+    padding: 145px 97px 0 0;
 }
 
 .footer__title {
@@ -409,4 +444,150 @@ body {
     background: var(--white-color);
     width: 32px;
     height: 32px;
+}
+
+/*
+Registration
+*/
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    min-height: 148px;
+    background-color: var(--breadcrumb-color);
+}
+
+.breadcrumb__title {
+    color: var(--pink-color);
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.registration {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 0 97px 0;
+}
+
+.registration__form {
+    width: 360px;
+}
+
+.registration__fieldset {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 31px;
+}
+
+.fieldset__legend {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--black-color);
+}
+
+.fieldset__input {
+    margin-top: 20px;
+    padding: 13px 17px 15px 17px;
+}
+
+.fieldset__input::placeholder {
+    color: var(--placeholder-color);
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.fieldset__text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--placeholder-color);
+    margin-top: 15px;
+}
+
+.registration__radio-inner {
+    margin-bottom: 33px;
+}
+
+.radio-button {
+    display: none;
+}
+
+.radio-button__label {
+    position: relative;
+    margin-left: 28px;
+    margin-right: 20px;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: var(--super-black-color);
+}
+
+.radio-button__label:before {
+    position: absolute;
+    content: '';
+    border: 1px solid #A4A4A4;
+    left: -28px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.radio-button:checked+.radio-button__label:before {
+    background: var(--pink-color);
+    background-size: 16px 16px;
+}
+
+.registration__button {
+    display: flex;
+    margin-top: 39px;
+    padding: 16px 24px 17px 29px;
+    background-color: var(--pink-color);
+}
+
+.registration-button__text {
+    margin-right: 20px;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.registration__loyalty-program {
+    width: 652px;
+}
+
+.loyalty__title,
+.loyalty__text,
+.loyalty__item {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 300;
+    color: var(--super-black-color);
+}
+
+.loyalty__title {
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.loyalty__text {
+    margin-bottom: 21px;
+}
+
+.loyalty__item {
+    margin-bottom: 16px;
+    padding-left: 43px;
+    position: relative;
+}
+
+.loyalty__item:before {
+    content: ' ';
+    width: 20px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    background: var(--white-color);
+    background-image: url(../img/check-icon.svg);
+    background-size: 20px 16px;
 }
