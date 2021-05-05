@@ -1,0 +1,28 @@
+.product-card {
+	.product-card__image {
+		margin-bottom: 25px;
+	}
+
+	.product-card__name {
+		font-size: 13px;
+		line-height: 16px;
+		color: $super-black-color;
+		text-transform: uppercase;
+		margin-bottom: 13px;
+		padding-left: 18px;
+	}
+
+	.product-card__description {
+		font-weight: 300;
+		color: $dark-grey-color;
+		margin-bottom: 18px;
+		padding-left: 16px;
+	}
+
+	.product-card__text {
+		font-size: 16px;
+		line-height: 19px;
+		color: $pink-color;
+		padding-left: 18px;
+	}
+}

@@ -1,0 +1,17 @@
+.nav-item {
+	.nav-item__link {
+		display: block;
+		color: $pink-color;
+		text-transform: uppercase;
+		margin-bottom: 12px;
+	}
+
+	.nav-item__list {
+		margin-bottom: 20px;
+	}
+
+	.nav-item__item {
+		padding-left: 34px;
+		margin-bottom: 11px;
+	}
+}

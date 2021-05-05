@@ -1,0 +1,12 @@
+.nav {
+	width: 198px;
+	padding: 37px 0 157px 34px;
+	background: $white-color;
+
+	.nav__title {
+		font-weight: 700;
+		color: $super-black-color;
+		text-transform: uppercase;
+		margin-bottom: 24px;
+	}
+}

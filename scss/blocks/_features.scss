@@ -1,0 +1,17 @@
+.features {
+	background-color: $black-color;
+
+	.features__list {
+		display: flex;
+		justify-content: space-between;
+		padding: 103px 0;
+	}
+
+	.features__item {
+		width: 360px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: $grey-white-color;
+	}
+}

@@ -1,0 +1,29 @@
+.fieldset {
+
+	.fieldset__legend {
+		font-size: 16px;
+		line-height: 19px;
+		color: $black-color;
+	}
+
+	.fieldset__input {
+		margin-top: 20px;
+		padding: 13px 17px 15px 17px;
+	}
+
+	.fieldset__input::placeholder {
+		color: $placeholder-color;
+		font-weight: 300;
+		font-size: 13px;
+		line-height: 16px;
+	}
+
+	.fieldset__text {
+		font-weight: 300;
+		font-size: 13px;
+		line-height: 16px;
+		color: $placeholder-color;
+		margin-top: 15px;
+	}
+
+}

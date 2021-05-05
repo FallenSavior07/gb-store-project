@@ -1,0 +1,14 @@
+.socials {
+	width: 155px;
+	display: flex;
+	justify-content: space-between;
+
+	.socials__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: $white-color;
+		width: 32px;
+		height: 32px;
+	}
+}

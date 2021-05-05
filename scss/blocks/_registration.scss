@@ -1,0 +1,35 @@
+.registration {
+	display: flex;
+	justify-content: space-between;
+	padding: 64px 0 97px 0;
+
+	.registration__form {
+		width: 360px;
+	}
+
+	.registration__fieldset {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 31px;
+	}
+
+	.registration__radio-inner {
+		margin-bottom: 33px;
+	}
+
+	.registration__button {
+		min-width: 167px;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 39px;
+		padding: 16px 24px 17px 29px;
+		background-color: $pink-color;
+		color: $white-color;
+		text-transform: uppercase;
+	}
+
+	.registration__loyalty-program {
+		width: 652px;
+	}
+
+}

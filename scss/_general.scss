@@ -1,0 +1,46 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.link {
+    text-decoration-line: none;
+    color: #6F6E6E;
+}
+
+.button {
+    border: 1px solid #FF6A6A;
+    text-align: center;
+
+    .button__link {
+        font-size: 16px;
+        line-height: 19px;
+        color: #F26376;
+        text-decoration-line: none;
+    }
+}
