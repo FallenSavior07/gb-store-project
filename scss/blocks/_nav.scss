@@ -1,7 +1,28 @@
 .nav {
-	width: 198px;
-	padding: 37px 0 157px 34px;
+	min-width: 232px;
+	min-height: 765px;
 	background: $white-color;
+	position: relative;
+	box-sizing: border-box;
+	padding-top: 37px;
+	padding-left: 34px;
+
+	.nav__button {
+		position: absolute;
+		top: 16px;
+		right: 17px;
+		border: none;
+		background-color: transparent;
+		fill: #6F6E6E;
+	}
+
+	.nav__button:hover {
+		cursor: pointer;
+	}
+
+	.nav__button:active+.nav {
+		display: none;
+	}
 
 	.nav__title {
 		font-weight: 700;

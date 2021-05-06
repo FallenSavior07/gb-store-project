@@ -36,11 +36,16 @@ body {
 .button {
     border: 1px solid #FF6A6A;
     text-align: center;
+    cursor: pointer !important;
 
     .button__link {
         font-size: 16px;
         line-height: 19px;
         color: #F26376;
         text-decoration-line: none;
+    }
+
+    .button__icon {
+        fill: $white-color;
     }
 }

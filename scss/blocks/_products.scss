@@ -36,4 +36,12 @@
 		padding: 14px 38px;
 		background-color: $white-color;
 	}
+
+	.products__button:hover {
+		background-color: $pink-color;
+	}
+
+	.products__button:hover .button__link {
+		color: $white-color;
+	}
 }

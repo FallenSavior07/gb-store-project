@@ -65,11 +65,16 @@
 	.footer__input {
 		width: 203px;
 		background-color: #E1E1E1;
-		border: none;
+		border: 1px solid #E1E1E1;
 		padding-left: 22px;
 		padding-right: 22px;
 		border-top-left-radius: 33px;
 		border-bottom-left-radius: 33px;
+		outline: none;
+	}
+
+	.footer__input:focus {
+		border: 1px solid $pink-color;
 	}
 
 	.footer__button {

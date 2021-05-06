@@ -11,4 +11,16 @@
 		width: 32px;
 		height: 32px;
 	}
+
+	.socials__icon {
+		fill: $super-black-color;
+	}
+
+	.socials__link:hover {
+		background-color: $pink-color;
+	}
+
+	.socials__link:hover .socials__icon {
+		fill: $white-color;
+	}
 }
