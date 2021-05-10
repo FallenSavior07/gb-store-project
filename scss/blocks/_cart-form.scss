@@ -1,0 +1,65 @@
+.cart-form {
+	.cart-form__fieldset {
+		margin-bottom: 57px;
+	}
+
+	.cart-form__inner {
+		padding: 39px 0 42px 0;
+		background: $cart-form-bottom-bkg-color;
+	}
+
+	.cart-form__container {
+		width: 273px;
+		margin: 0 auto;
+	}
+
+	.cart-form__text {
+		text-transform: uppercase;
+		text-align: end;
+	}
+
+	.cart-form__text_sub-total {
+		min-width: 103px;
+		min-height: 13px;
+		font-size: 11px;
+		line-height: 13px;
+		color: $cart-form-button-color;
+		margin-bottom: 12px;
+	}
+
+	.cart-form__text_grand-total {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 19px;
+		color: $super-black-color;
+		margin-bottom: 21px;
+	}
+
+	.cart-form__price-text {
+		margin-left: 15px;
+	}
+
+	.cart-form__price-text_grand {
+		font-weight: 700;
+		color: $pink-color;
+	}
+
+	.cart-form__line {
+		background: $hr-color;
+		opacity: 0.2;
+	}
+
+	.cart-form__button {
+		min-width: 273px;
+		min-height: 50px;
+		padding: 14px 37px 15px 35px;
+		margin-top: 17px;
+		background-color: $pink-color;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 19px;
+		color: $white-color;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+}

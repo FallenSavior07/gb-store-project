@@ -170,7 +170,7 @@ body {
 .button {
   border: 1px solid #FF6A6A;
   text-align: center;
-  cursor: pointer !important;
+  cursor: pointer;
 }
 
 .button .button__link {
@@ -257,12 +257,13 @@ body {
 
 .nav {
   min-width: 232px;
-  min-height: 765px;
+  min-height: 764px;
   background: #FFFFFF;
   position: relative;
   box-sizing: border-box;
   padding-top: 37px;
   padding-left: 34px;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .nav .nav__button {
@@ -560,12 +561,16 @@ body {
   background-color: #222222;
 }
 
+.footer .footer__top {
+  background: rgba(244, 244, 244, 0.7);
+}
+
 .footer .footer__top-wrapper {
   min-height: 448px;
   background: url(../img/footer-background.png);
 }
 
-.footer .footer__left-inner {
+.footer .footer__inner {
   display: flex;
   justify-content: space-between;
 }
@@ -590,7 +595,7 @@ body {
   color: #222222;
 }
 
-.footer .footer__right-inner {
+.footer .footer__newsletter {
   padding: 145px 97px 0 0;
 }
 
@@ -643,7 +648,7 @@ body {
   border-bottom-right-radius: 33px;
 }
 
-.footer .footer__bottom-wrapper {
+.footer .footer__bottom {
   min-height: 79px;
   display: flex;
   justify-content: space-between;
@@ -718,6 +723,35 @@ body {
   margin-bottom: 33px;
 }
 
+.registration .registration__radio-button {
+  display: none;
+}
+
+.registration .registration__radio-label {
+  position: relative;
+  margin-left: 28px;
+  margin-right: 20px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.registration .registration__radio-label:before {
+  position: absolute;
+  content: '';
+  border: 1px solid #A4A4A4;
+  left: -28px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.registration .registration__radio-button:checked + .registration__radio-label:before {
+  background: #F16D7F;
+  background-size: 16px 16px;
+}
+
 .registration .registration__button {
   min-width: 167px;
   display: flex;
@@ -737,6 +771,11 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #222222;
+}
+
+.fieldset .fieldset__legend_shipping-adress {
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .fieldset .fieldset__input {
@@ -768,33 +807,24 @@ body {
   margin-top: 15px;
 }
 
-.radio-button {
-  display: none;
-}
-
-.radio-button__label {
-  position: relative;
-  margin-left: 28px;
-  margin-right: 20px;
+.fieldset .fieldset__button {
+  margin-top: 24px;
+  min-width: 101px;
+  padding: 10px 14px 12px 14px;
+  background-color: #FFFFFF;
+  border: 1px solid #A4A4A4;
   font-weight: 300;
   font-size: 11px;
   line-height: 13px;
-  color: #000000;
+  text-transform: uppercase;
+  text-decoration-line: none;
+  color: #4A4A4A;
 }
 
-.radio-button__label:before {
-  position: absolute;
-  content: '';
-  border: 1px solid #A4A4A4;
-  left: -28px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-}
-
-.radio-button:checked + .radio-button__label:before {
-  background: #F16D7F;
-  background-size: 16px 16px;
+.fieldset .fieldset__button:hover {
+  border: 1px solid #FF6A6A;
+  background-color: #F16D7F;
+  color: #FFFFFF;
 }
 
 .loyalty .loyalty__title,
@@ -831,5 +861,169 @@ body {
   background: #FFFFFF;
   background-image: url(../img/check-icon.svg);
   background-size: 20px 16px;
+}
+
+.cart .cart__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 96px;
+  margin-bottom: 129px;
+}
+
+.cart .cart__list {
+  margin-bottom: 72px;
+}
+
+.cart .cart__button-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart .cart__button {
+  min-width: 225px;
+  min-height: 50px;
+  padding: 17px 40px 16px 39px;
+  background-color: #FFFFFF;
+  border: 1px solid #A4A4A4;
+}
+
+.cart .cart__button-link {
+  text-transform: uppercase;
+  text-decoration-line: none;
+  color: #000000;
+}
+
+.cart .cart__button:hover {
+  border: 1px solid #FF6A6A;
+  background-color: #F16D7F;
+}
+
+.cart .cart__button:hover .cart__button-link {
+  color: #FFFFFF;
+}
+
+.cart .cart__form {
+  width: 360px;
+  margin-top: 17px;
+}
+
+.cart-product-card {
+  display: flex;
+  width: 652px;
+  min-height: 306px;
+  border: 1px solid #EAEAEA;
+  position: relative;
+  margin-bottom: 40px;
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+}
+
+.cart-product-card .cart-product-card__inner {
+  box-sizing: border-box;
+  padding: 22px 97px 0 31px;
+}
+
+.cart-product-card .cart-product-card__name {
+  display: inline-block;
+  width: 262px;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+}
+
+.cart-product-card .cart-product-card__exit-button {
+  position: absolute;
+  top: 28px;
+  right: 22px;
+  border: none;
+  background-color: transparent;
+  fill: #6F6E6E;
+}
+
+.cart-product-card .cart-product-card__item {
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+  margin-bottom: 6px;
+}
+
+.cart-product-card .cart-product-card__text {
+  color: #F16D7F;
+}
+
+.cart-product-card .cart-product-card__input {
+  width: 43px;
+  min-height: 24px;
+  border: 1px solid #EAEAEA;
+  text-align: center;
+  outline: none;
+  font-size: 18px;
+  line-height: 22px;
+  color: #656565;
+}
+
+.cart-form .cart-form__fieldset {
+  margin-bottom: 57px;
+}
+
+.cart-form .cart-form__inner {
+  padding: 39px 0 42px 0;
+  background: #F5F3F3;
+}
+
+.cart-form .cart-form__container {
+  width: 273px;
+  margin: 0 auto;
+}
+
+.cart-form .cart-form__text {
+  text-transform: uppercase;
+  text-align: end;
+}
+
+.cart-form .cart-form__text_sub-total {
+  min-width: 103px;
+  min-height: 13px;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  margin-bottom: 12px;
+}
+
+.cart-form .cart-form__text_grand-total {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 21px;
+}
+
+.cart-form .cart-form__price-text {
+  margin-left: 15px;
+}
+
+.cart-form .cart-form__price-text_grand {
+  font-weight: 700;
+  color: #F16D7F;
+}
+
+.cart-form .cart-form__line {
+  background: #E2E2E2;
+  opacity: 0.2;
+}
+
+.cart-form .cart-form__button {
+  min-width: 273px;
+  min-height: 50px;
+  padding: 14px 37px 15px 35px;
+  margin-top: 17px;
+  background-color: #F16D7F;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 /*# sourceMappingURL=style.css.map */

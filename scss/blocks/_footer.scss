@@ -1,13 +1,16 @@
 .footer {
 	background-color: $black-color;
 
+	.footer__top {
+		background: $footer-top-background-color;
+	}
 
 	.footer__top-wrapper {
 		min-height: 448px;
 		background: url(../img/footer-background.png);
 	}
 
-	.footer__left-inner {
+	.footer__inner {
 		display: flex;
 		justify-content: space-between;
 	}
@@ -32,7 +35,7 @@
 		color: $black-color;
 	}
 
-	.footer__right-inner {
+	.footer__newsletter {
 		padding: 145px 97px 0 0;
 	}
 
@@ -85,7 +88,7 @@
 		border-bottom-right-radius: 33px;
 	}
 
-	.footer__bottom-wrapper {
+	.footer__bottom {
 		min-height: 79px;
 		display: flex;
 		justify-content: space-between;

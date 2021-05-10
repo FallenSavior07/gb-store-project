@@ -17,6 +17,35 @@
 		margin-bottom: 33px;
 	}
 
+	.registration__radio-button {
+		display: none;
+	}
+
+	.registration__radio-label {
+		position: relative;
+		margin-left: 28px;
+		margin-right: 20px;
+		font-weight: 300;
+		font-size: 11px;
+		line-height: 13px;
+		color: $super-black-color;
+	}
+
+	.registration__radio-label:before {
+		position: absolute;
+		content: '';
+		border: 1px solid #A4A4A4;
+		left: -28px;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+	}
+
+	.registration__radio-button:checked+.registration__radio-label:before {
+		background: $pink-color;
+		background-size: 16px 16px;
+	}
+
 	.registration__button {
 		min-width: 167px;
 		display: flex;

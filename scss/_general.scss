@@ -30,13 +30,13 @@ body {
 
 .link {
     text-decoration-line: none;
-    color: #6F6E6E;
+    color: $link-color;
 }
 
 .button {
     border: 1px solid #FF6A6A;
     text-align: center;
-    cursor: pointer !important;
+    cursor: pointer;
 
     .button__link {
         font-size: 16px;
