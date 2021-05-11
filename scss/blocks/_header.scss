@@ -1,39 +1,37 @@
 .header {
 	background-color: $black-color;
 
-	.header__wrapper {
+	&__wrapper {
 		min-height: 75px;
-		display: flex;
-		justify-content: space-between;
+		@include flex-space-between;
 		align-items: center;
 	}
 
-	.header__logo {
+	&__logo {
 		margin-right: 41px;
 	}
 
-	.header__inner {
+	&__inner {
 		width: 169px;
 		position: relative;
-		display: flex;
-		justify-content: space-between;
+		@include flex-space-between;
 	}
 
-	.header__image {
+	&__image {
 		fill: $icon-color;
 	}
 
-	.header__image:hover {
+	&__image:hover {
 		fill: $pink-color;
 		cursor: pointer;
 	}
 
-	.header__menu-button {
+	&__menu-button {
 		border: none;
 		background-color: transparent;
 	}
 
-	.header__nav {
+	&__nav {
 		display: none;
 		position: absolute;
 		z-index: 1;
@@ -41,28 +39,25 @@
 		left: 169px;
 	}
 
-	.header__menu-button:active+.header__nav,
-	.header__menu-button:focus+.header__nav {
+	&__menu-button:active+&__nav,
+	&__menu-button:focus+&__nav {
 		display: block;
 	}
 
-	.header__link_cart {
+	&__link_cart {
 		position: relative;
 	}
 
-	.header__link_cart::after {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: absolute;
+	&__link_cart::after {
 		content: '5';
-		font-size: 12px;
-		line-height: 14px;
-		color: $white-color;
+		@include flex-x-y-center;
+		position: absolute;
 		top: -5px;
 		right: -9px;
 		width: 19px;
 		height: 19px;
+		@include font(12px, 14px);
+		color: $white-color;
 		background-color: $pink-color;
 		border-radius: 50%;
 		text-decoration-line: none;

@@ -1,17 +1,16 @@
 .fieldset {
 
-	.fieldset__legend {
-		font-size: 16px;
-		line-height: 19px;
+	&__legend {
+		@include font(16px, 19px);
 		color: $black-color;
 	}
 
-	.fieldset__legend_shipping-adress {
+	&__legend_shipping-adress {
 		text-transform: uppercase;
 		color: $super-black-color;
 	}
 
-	.fieldset__input {
+	&__input {
 		width: 100%;
 		min-height: 45px;
 		margin-top: 20px;
@@ -21,40 +20,34 @@
 		border: 1px solid #A4A4A4;
 	}
 
-	.fieldset__input::placeholder {
+	&__input::placeholder {
 		color: $placeholder-color;
-		font-weight: 300;
-		font-size: 13px;
-		line-height: 16px;
+		@include font(13px, 16px, 300);
 	}
 
-	.fieldset__input:focus {
+	&__input:focus {
 		border: 1px solid $pink-color;
 	}
 
-	.fieldset__text {
-		font-weight: 300;
-		font-size: 13px;
-		line-height: 16px;
-		color: $placeholder-color;
+	&__text {
 		margin-top: 15px;
+		@include font(13px, 16px, 300);
+		color: $placeholder-color;
 	}
 
-	.fieldset__button {
-		margin-top: 24px;
+	&__button {
 		min-width: 101px;
+		margin-top: 24px;
 		padding: 10px 14px 12px 14px;
 		background-color: $white-color;
 		border: 1px solid #A4A4A4;
-		font-weight: 300;
-		font-size: 11px;
-		line-height: 13px;
+		@include font(11px, 13px, 300);
 		text-transform: uppercase;
 		text-decoration-line: none;
 		color: $cart-form-button-color;
 	}
 
-	.fieldset__button:hover {
+	&__button:hover {
 		border: 1px solid #FF6A6A;
 		background-color: $pink-color;
 		color: $white-color;

@@ -1,63 +1,58 @@
 .cart-form {
-	.cart-form__fieldset {
+	&__fieldset {
 		margin-bottom: 57px;
 	}
 
-	.cart-form__inner {
+	&__inner {
 		padding: 39px 0 42px 0;
 		background: $cart-form-bottom-bkg-color;
 	}
 
-	.cart-form__container {
+	&__container {
 		width: 273px;
 		margin: 0 auto;
 	}
 
-	.cart-form__text {
+	&__text {
 		text-transform: uppercase;
 		text-align: end;
 	}
 
-	.cart-form__text_sub-total {
+	&__text_sub-total {
 		min-width: 103px;
 		min-height: 13px;
-		font-size: 11px;
-		line-height: 13px;
-		color: $cart-form-button-color;
 		margin-bottom: 12px;
+		@include font(11px, 13px);
+		color: $cart-form-button-color;
 	}
 
-	.cart-form__text_grand-total {
-		font-weight: 300;
-		font-size: 16px;
-		line-height: 19px;
-		color: $super-black-color;
+	&__text_grand-total {
 		margin-bottom: 21px;
+		@include font(16px, 19px, 300);
+		color: $super-black-color;
 	}
 
-	.cart-form__price-text {
+	&__price-text {
 		margin-left: 15px;
 	}
 
-	.cart-form__price-text_grand {
+	&__price-text_grand {
 		font-weight: 700;
 		color: $pink-color;
 	}
 
-	.cart-form__line {
+	&__line {
 		background: $hr-color;
 		opacity: 0.2;
 	}
 
-	.cart-form__button {
+	&__button {
 		min-width: 273px;
 		min-height: 50px;
 		padding: 14px 37px 15px 35px;
 		margin-top: 17px;
 		background-color: $pink-color;
-		font-weight: 300;
-		font-size: 16px;
-		line-height: 19px;
+		@include font(16px, 19px, 300);
 		color: $white-color;
 		text-transform: uppercase;
 		white-space: nowrap;

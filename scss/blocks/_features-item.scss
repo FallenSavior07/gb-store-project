@@ -1,23 +1,22 @@
 .features-item {
-	.features-item__image_margin_delivery {
+	&__image_margin_delivery {
 		margin-bottom: 28px;
 	}
 
-	.features-item__image_margin_sales {
+	&__image_margin_sales {
 		margin-bottom: 19px;
 	}
 
-	.features-item__image_margin_quality {
+	&__image_margin_quality {
 		margin-bottom: 25px;
 	}
 
-	.features-item__title {
-		font-size: 20px;
-		line-height: 24px;
+	&__title {
+		@include font(20px, 24px);
 		margin-bottom: 16px;
 	}
 
-	.features-item__descr {
+	&__descr {
 		width: 310px;
 		text-align: center;
 	}

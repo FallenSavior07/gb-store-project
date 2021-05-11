@@ -1,14 +1,13 @@
 .nav {
 	min-width: 232px;
 	min-height: 764px;
-	background: $white-color;
+	padding: 37px 0 0 34px;
 	position: relative;
+	background: $white-color;
 	box-sizing: border-box;
-	padding-top: 37px;
-	padding-left: 34px;
 	box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 
-	.nav__button {
+	&__button {
 		position: absolute;
 		top: 16px;
 		right: 17px;
@@ -17,18 +16,18 @@
 		fill: #6F6E6E;
 	}
 
-	.nav__button:hover {
+	&__button:hover {
 		cursor: pointer;
 	}
 
-	.nav__button:active+.nav {
+	&__button:active+.nav {
 		display: none;
 	}
 
-	.nav__title {
+	&__title {
+		margin-bottom: 24px;
 		font-weight: 700;
 		color: $super-black-color;
 		text-transform: uppercase;
-		margin-bottom: 24px;
 	}
 }

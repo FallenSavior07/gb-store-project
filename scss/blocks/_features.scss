@@ -1,17 +1,14 @@
 .features {
 	background-color: $black-color;
 
-	.features__list {
-		display: flex;
-		justify-content: space-between;
+	&__list {
+		@include flex-space-between;
 		padding: 103px 0;
 	}
 
-	.features__item {
+	&__item {
 		width: 360px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		@include flex-column-x-center;
 		color: $grey-white-color;
 	}
 }

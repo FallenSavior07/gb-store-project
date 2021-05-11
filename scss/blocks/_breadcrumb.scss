@@ -1,13 +1,11 @@
 .breadcrumb {
-	display: flex;
-	align-items: center;
+	@include flex-y-center;
 	min-height: 148px;
 	background-color: $breadcrumb-color;
 
 	.breadcrumb__title {
-		color: $pink-color;
-		font-size: 24px;
-		line-height: 29px;
+		@include font(24px, 29px);
 		text-transform: uppercase;
+		color: $pink-color;
 	}
 }

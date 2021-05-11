@@ -1,16 +1,16 @@
 .nav-item {
-	.nav-item__link {
+	&__link {
 		display: block;
+		margin-bottom: 12px;
 		color: $pink-color;
 		text-transform: uppercase;
-		margin-bottom: 12px;
 	}
 
-	.nav-item__list {
+	&__list {
 		margin-bottom: 20px;
 	}
 
-	.nav-item__item {
+	&__item {
 		padding-left: 22px;
 		margin-bottom: 11px;
 	}

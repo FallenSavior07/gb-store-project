@@ -1,55 +1,50 @@
 .registration {
-	display: flex;
-	justify-content: space-between;
+	@include flex-space-between;
 	padding: 64px 0 97px 0;
 
-	.registration__form {
+	&__form {
 		width: 360px;
 	}
 
-	.registration__fieldset {
+	&__fieldset {
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 31px;
 	}
 
-	.registration__radio-inner {
+	&__radio-inner {
 		margin-bottom: 33px;
 	}
 
-	.registration__radio-button {
+	&__radio-button {
 		display: none;
 	}
 
-	.registration__radio-label {
+	&__radio-label {
 		position: relative;
-		margin-left: 28px;
-		margin-right: 20px;
-		font-weight: 300;
-		font-size: 11px;
-		line-height: 13px;
+		margin: 0 20px 0 28px;
+		@include font (11px, 13px, 300);
 		color: $super-black-color;
 	}
 
-	.registration__radio-label:before {
-		position: absolute;
+	&__radio-label:before {
 		content: '';
-		border: 1px solid #A4A4A4;
+		height: 16px;
+		position: absolute;
 		left: -28px;
 		width: 16px;
-		height: 16px;
+		border: 1px solid #A4A4A4;
 		border-radius: 50%;
 	}
 
-	.registration__radio-button:checked+.registration__radio-label:before {
+	&__radio-button:checked+&__radio-label:before {
 		background: $pink-color;
 		background-size: 16px 16px;
 	}
 
-	.registration__button {
+	&__button {
+		@include flex-space-between;
 		min-width: 167px;
-		display: flex;
-		justify-content: space-between;
 		margin-top: 39px;
 		padding: 16px 24px 17px 29px;
 		background-color: $pink-color;
@@ -57,7 +52,7 @@
 		text-transform: uppercase;
 	}
 
-	.registration__loyalty-program {
+	&__loyalty-program {
 		width: 652px;
 	}
 

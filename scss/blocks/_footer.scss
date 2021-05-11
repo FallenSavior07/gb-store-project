@@ -1,104 +1,91 @@
 .footer {
 	background-color: $black-color;
 
-	.footer__top {
+	&__top {
 		background: $footer-top-background-color;
 	}
 
-	.footer__top-wrapper {
+	&__top-wrapper {
 		min-height: 448px;
 		background: url(../img/footer-background.png);
 	}
 
-	.footer__inner {
-		display: flex;
-		justify-content: space-between;
+	&__inner {
+		@include flex-space-between;
 	}
 
-	.footer__info {
+	&__info {
 		max-width: 360px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		@include flex-column-x-center;
 		padding-top: 97px;
 	}
 
-	.footer__image {
+	&__image {
 		margin-bottom: 30px;
 	}
 
-	.footer__text {
-		font-style: italic;
-		font-size: 20px;
-		line-height: 24px;
+	&__text {
+		@include font(20px, 24px, 400, italic);
 		text-align: center;
 		color: $black-color;
 	}
 
-	.footer__newsletter {
+	&__newsletter {
 		padding: 145px 97px 0 0;
 	}
 
-	.footer__title {
-		font-weight: 700;
-		font-size: 24px;
-		line-height: 38px;
+	&__title {
+		@include font(24px, 38px, 700);
 		text-align: center;
 		color: $black-color;
 		text-transform: uppercase;
 	}
 
-	.footer__subtitle {
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 30px;
-		text-align: center;
-		color: $black-color;
-		text-transform: uppercase;
+	&__subtitle {
 		margin-bottom: 32px;
+		@include font(18px, 30px);
+		text-align: center;
+		color: $black-color;
+		text-transform: uppercase;
 	}
 
-	.footer__form {
-		display: flex;
-		justify-content: center;
+	&__form {
+		@include flex-x-center;
 		width: 344px;
 		height: 49px;
 	}
 
-	.footer__input {
+	&__input {
 		width: 203px;
+		padding: 0 22px;
 		background-color: #E1E1E1;
 		border: 1px solid #E1E1E1;
-		padding-left: 22px;
-		padding-right: 22px;
 		border-top-left-radius: 33px;
 		border-bottom-left-radius: 33px;
 		outline: none;
 	}
 
-	.footer__input:focus {
+	&__input:focus {
 		border: 1px solid $pink-color;
 	}
 
-	.footer__button {
-		padding: 0 18px 0 18px;
+	&__button {
+		padding: 0 18px;
 		color: $white-color;
 		background-color: $pink-color;
 		border-top-right-radius: 33px;
 		border-bottom-right-radius: 33px;
 	}
 
-	.footer__bottom {
+	&__bottom {
 		min-height: 79px;
-		display: flex;
-		justify-content: space-between;
+		@include flex-space-between;
 		align-items: center;
 	}
 
-	.footer__copyright {
+	&__copyright {
 		width: 332px;
-		font-size: 16px;
-		line-height: 19px;
+		@include font(16px, 19px);
 		color: $grey-white-color;
 	}
 }

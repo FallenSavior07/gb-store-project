@@ -1,44 +1,38 @@
 .brand {
-	display: flex;
-	justify-content: center;
+	@include flex-x-center;
 	background-color: $light-pink-color;
 
-	.brand__wrapper {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+	&__wrapper {
+		@include flex-column-y-center;
 		width: 708px;
 		padding-left: 92px;
 	}
 
-	.brand__title {
+	&__title {
 		position: relative;
-		font-weight: 900;
-		font-size: 48px;
-		line-height: 58px;
+		@include font(48px, 58px, 900);
 		color: $black-color;
 		text-transform: uppercase;
 	}
 
-	.brand__title::before {
+	&__title::before {
 		content: '';
 		width: 12px;
 		height: 92px;
-		background-color: $pink-color;
 		position: absolute;
 		left: -28px;
 		background-size: 12px 92px;
+		background-color: $pink-color;
 	}
 
-	.brand__subtitle {
-		font-weight: 700;
-		font-size: 32px;
-		line-height: 38px;
+	&__subtitle {
+		@include font(32px, 38px, 700);
 		text-transform: uppercase;
 		color: $black-color;
+		white-space: nowrap;
 	}
 
-	.brand__text_pink {
+	&__text_pink {
 		color: $pink-color;
 	}
 }

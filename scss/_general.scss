@@ -11,10 +11,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    @include font;
 }
 
 .container {
@@ -23,9 +20,7 @@ body {
 }
 
 .text {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
+    @include font(14px, 17px, 300);
 }
 
 .link {
@@ -38,14 +33,13 @@ body {
     text-align: center;
     cursor: pointer;
 
-    .button__link {
-        font-size: 16px;
-        line-height: 19px;
-        color: #F26376;
+    &__link {
+        @include font(16px, 19px);
+        color: $button-link-color;
         text-decoration-line: none;
     }
 
-    .button__icon {
+    &__icon {
         fill: $white-color;
     }
 }
