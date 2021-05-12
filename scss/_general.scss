@@ -11,7 +11,10 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    @include font;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .container {
@@ -20,7 +23,9 @@ body {
 }
 
 .text {
-    @include font(14px, 17px, 300);
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
 }
 
 .link {
@@ -34,12 +39,25 @@ body {
     cursor: pointer;
 
     &__link {
-        @include font(16px, 19px);
+        font-size: 16px;
+        line-height: 19px;
         color: $button-link-color;
         text-decoration-line: none;
     }
 
     &__icon {
         fill: $white-color;
+    }
+}
+
+@media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    .container {
+        width: 736px;
+    }
+}
+
+@media (max-width: $max-mobile-width) {
+    .container {
+        width: 343px;
     }
 }

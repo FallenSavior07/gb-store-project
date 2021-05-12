@@ -21,3 +21,23 @@
 		text-align: center;
 	}
 }
+
+@media (max-width: $max-mobile-width) {
+	.features-item {
+		&__image_margin_delivery {
+			margin-bottom: 27px;
+		}
+
+		&__image_margin_sales {
+			margin-bottom: 18px;
+		}
+
+		&__image_margin_quality {
+			margin-bottom: 24px;
+		}
+
+		&__title {
+			margin-bottom: 15px;
+		}
+	}
+}

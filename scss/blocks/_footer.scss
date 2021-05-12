@@ -2,22 +2,19 @@
 	background-color: $black-color;
 
 	&__top {
-		background: $footer-top-background-color;
+		min-height: 448px;
+		background: url(../img/footer-background.png);
+		background-position: center;
 	}
 
 	&__top-wrapper {
-		min-height: 448px;
-		background: url(../img/footer-background.png);
-	}
-
-	&__inner {
 		@include flex-space-between;
 	}
 
 	&__info {
 		max-width: 360px;
 		@include flex-column-x-center;
-		padding-top: 97px;
+		padding: 97px 0 0 0;
 	}
 
 	&__image {
@@ -31,7 +28,7 @@
 	}
 
 	&__newsletter {
-		padding: 145px 97px 0 0;
+		padding: 155px 97px 0 0;
 	}
 
 	&__title {
@@ -51,12 +48,11 @@
 
 	&__form {
 		@include flex-x-center;
-		width: 344px;
-		height: 49px;
+		min-height: 49px;
 	}
 
 	&__input {
-		width: 203px;
+		min-width: 212px;
 		padding: 0 22px;
 		background-color: #E1E1E1;
 		border: 1px solid #E1E1E1;
@@ -70,6 +66,7 @@
 	}
 
 	&__button {
+		min-width: 100px;
 		padding: 0 18px;
 		color: $white-color;
 		background-color: $pink-color;
@@ -84,8 +81,92 @@
 	}
 
 	&__copyright {
-		width: 332px;
+		width: 251px;
+		text-align-last: justify;
 		@include font(16px, 19px);
 		color: $grey-white-color;
+	}
+}
+
+@media (max-width: $max-tablet-width) {
+	.footer {
+		&__top {
+			min-height: 614px;
+			background-size: auto 100%;
+		}
+
+		&__top-wrapper {
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			padding: 64px 0 0 0;
+		}
+
+		&__info {
+			padding: 0;
+		}
+
+		&__newsletter {
+			margin: 72px 0 0 0;
+			padding: 0;
+		}
+
+		&__copyright {
+			margin: 0 0 0 16px;
+		}
+
+		&__socials {
+			margin: 0 16px 0 0;
+		}
+	}
+}
+
+@media (max-width: $max-mobile-width) {
+	.footer {
+		&__top {
+			min-height: 550px;
+			background-position: contain;
+		}
+
+		&__newsletter {
+			margin: 65px 0 0 0;
+		}
+
+		&__title {
+			@include font(24px, 37px);
+		}
+
+		&__subtitle {
+			@include font(14px, 22px, 400);
+		}
+
+		&__form {
+			min-height: 47px;
+		}
+
+		&__input {
+			width: 203px;
+			padding: 0 21px;
+		}
+
+		&__button {
+			min-width: 96px;
+			padding: 0 18px;
+		}
+
+		&__bottom {
+			display: flex;
+			flex-direction: column-reverse;
+			justify-content: flex-start;
+			padding: 43px 0 9px 0;
+		}
+
+		&__copyright {
+			margin: 0;
+		}
+
+		&__socials {
+			margin: 0 0 40px 0;
+		}
 	}
 }

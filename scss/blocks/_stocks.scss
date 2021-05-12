@@ -12,6 +12,7 @@
 		min-height: 260px;
 		@include flex-x-y-center;
 		flex-direction: column;
+		background-size: cover;
 	}
 
 	&__item_theme_women {
@@ -30,5 +31,44 @@
 		width: 100%;
 		min-height: 180px;
 		background-image: url(../img/accesories.jpg);
+	}
+}
+
+@media (max-width: $max-tablet-width) {
+	.stocks {
+		&__list {
+			min-height: 303px;
+			margin-top: 20px;
+		}
+
+		&__item {
+			width: 232px;
+			min-height: 168px;
+		}
+
+		&__item_theme_accesories {
+			width: 100%;
+			min-height: 116px;
+		}
+	}
+}
+
+@media (max-width: $max-mobile-width) {
+	.stocks {
+		&__list {
+			min-height: 948px;
+			margin-top: 64px;
+			justify-content: center;
+		}
+
+		&__item {
+			width: 343px;
+			min-height: 247px;
+		}
+
+		&__item_theme_accesories {
+			width: 100%;
+			min-height: 111px;
+		}
 	}
 }

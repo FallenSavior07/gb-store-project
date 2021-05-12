@@ -60,10 +60,10 @@
 	}
 }
 
-.product-card:hover &__button {
+.product-card:hover .product-card__button {
 	display: flex;
 }
 
-.product-card:hover &__wrapper::before {
+.product-card:hover .product-card__wrapper::before {
 	display: block;
 }
