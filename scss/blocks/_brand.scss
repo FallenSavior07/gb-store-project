@@ -1,6 +1,6 @@
 .brand {
 	@include flex-x-center;
-	min-height: 764px;
+	min-height: 368px;
 	background-color: $light-pink-color;
 
 	&__left-inner {
@@ -49,15 +49,16 @@
 
 @media (max-width: $max-tablet-width) {
 	.brand {
-		min-height: 368px;
-
 		&__left-inner {
-			width: 384px;
+			width: 50%;
+			/*384 px*/
 		}
 
 		&__right-inner {
-			width: 317px;
-			padding-left: 67px;
+			width: 41.3%;
+			/*317 px*/
+			padding-left: 8.7%;
+			/*317 px*/
 		}
 
 		&__title {
@@ -81,7 +82,7 @@
 		&__right-inner {
 			width: 375px;
 			align-items: center;
-			padding: 0 0 0 27px;
+			padding-left: 27px;
 		}
 
 		&__title {

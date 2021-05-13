@@ -8,11 +8,13 @@
 	}
 
 	&__item {
-		width: 360px;
+		width: 31.6%;
+		/* 360 px - desktop*/
 		min-height: 260px;
 		@include flex-x-y-center;
 		flex-direction: column;
 		background-size: cover;
+		background-position: center;
 	}
 
 	&__item_theme_women {
@@ -42,7 +44,8 @@
 		}
 
 		&__item {
-			width: 232px;
+			width: 31.5%;
+			/* 232 px */
 			min-height: 168px;
 		}
 
@@ -62,7 +65,8 @@
 		}
 
 		&__item {
-			width: 343px;
+			width: 100%;
+			/* 343 px */
 			min-height: 247px;
 		}
 

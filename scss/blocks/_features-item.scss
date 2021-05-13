@@ -41,3 +41,11 @@
 		}
 	}
 }
+
+@media (max-width: 350px) {
+	.features-item {
+		&__descr {
+			width: 100%;
+		}
+	}
+}

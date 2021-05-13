@@ -18,6 +18,12 @@ body {
 }
 
 .container {
+    width: 71.3%;
+    /* 1140 px*/
+    margin: 0 auto;
+}
+
+.products-container {
     width: 1140px;
     margin: 0 auto;
 }
@@ -50,14 +56,27 @@ body {
     }
 }
 
-@media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-    .container {
+@media (max-width: 1599px) {
+    .products-container {
         width: 736px;
+    }
+}
+
+
+@media (max-width: $max-tablet-width) {
+    .container {
+        width: 95.8%;
+        /* 736px */
     }
 }
 
 @media (max-width: $max-mobile-width) {
     .container {
-        width: 343px;
+        width: 91.5%;
+        /* 343px */
+    }
+
+    .products-container {
+        width: 91.5%;
     }
 }

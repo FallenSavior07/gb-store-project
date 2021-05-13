@@ -1,6 +1,6 @@
 .nav {
 	min-width: 232px;
-	min-height: 764px;
+	min-height: 767px;
 	padding: 37px 0 0 34px;
 	position: relative;
 	background: $white-color;
@@ -30,4 +30,12 @@
 		color: $super-black-color;
 		text-transform: uppercase;
 	}
+}
+
+@media (max-width: $max-tablet-width) {
+	.nav {}
+}
+
+@media (max-width: $max-mobile-width) {
+	.nav {}
 }
