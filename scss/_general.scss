@@ -51,6 +51,10 @@ body {
         text-decoration-line: none;
     }
 
+    &__link_black {
+        color: $super-black-color;
+    }
+
     &__text {
         font-size: 14px;
         line-height: 17px;
@@ -70,17 +74,14 @@ body {
     }
 }
 
-@media (max-width: 1599px) {
-    .products-container {
-        width: 736px;
-    }
-}
-
-
 @media (max-width: $max-tablet-width) {
     .container {
         width: 95.8%;
         /* 736px */
+    }
+
+    .products-container {
+        width: 736px;
     }
 }
 

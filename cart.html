@@ -103,7 +103,7 @@
 	</header>
 	<main class="main">
 		<section class="breadcrumb">
-			<div class="container">
+			<div class="breadcrumb__wrapper container">
 				<h1 class="breadcrumb__title">shopping cart</h1>
 		</section>
 		<section class="cart">
@@ -168,16 +168,19 @@
 						<input class="fieldset__input" type="text" placeholder="City" required>
 						<input class="fieldset__input" type="text" placeholder="State" required>
 						<input class="fieldset__input" type="text" placeholder="Postcode / Zip" required>
-						<button class="fieldset__button button" type="button">get a quote</button>
+						<button class="fieldset__button button" type="submit">get a quote</button>
 					</fieldset>
-					<div class="cart-form__inner">
+					<div class="cart-form__price-inner">
 						<div class="cart-form__container">
 							<p class="cart-form__text cart-form__text_sub-total">sub total<span
 									class="cart-form__price-text">$900</span></p>
 							<p class="cart-form__text cart-form__text_grand-total">grand total<span
 									class="cart-form__price-text cart-form__price-text_grand">$900</span></p>
 							<hr class="cart-form__line">
-							<button type="submit" class="cart-form__button button">proceed to checkout</button>
+							<button type="submit" class="cart-form__button button"><a
+									class="button__link button__link_black" href="#">proceed to
+									checkout</a>
+							</button>
 						</div>
 					</div>
 			</div>
