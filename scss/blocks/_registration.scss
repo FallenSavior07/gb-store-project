@@ -44,16 +44,68 @@
 
 	&__button {
 		@include flex-space-between;
+		align-items: center;
 		min-width: 167px;
 		margin-top: 39px;
-		padding: 16px 24px 17px 29px;
-		background-color: $pink-color;
-		color: $white-color;
+		padding: 16px 20px 17px 29px;
+		background-color: $white-color;
 		text-transform: uppercase;
 	}
 
-	&__loyalty-program {
-		width: 652px;
+	&__button:hover {
+		background-color: $pink-color;
+
+		.button__text {
+			color: $white-color;
+
+		}
+
+		.button__icon {
+			fill: $white-color;
+		}
+
 	}
 
+	&__loyalty-program {
+		width: 57.2%;
+		/* 652px - desktop */
+	}
+
+}
+
+@media (max-width: $max-tablet-width) {
+	.registration {
+		padding: 40px 0 97px 0;
+
+		&__loyalty-program {
+			width: 48.1%;
+			/* 652px - desktop */
+		}
+	}
+}
+
+@media (max-width: $max-mobile-width) {
+	.registration {
+		@include flex-column-x-center;
+
+		&__button {
+			margin: 39px 0 40px 0;
+		}
+
+		&__loyalty-program {
+			width: 359px
+		}
+	}
+}
+
+@media (max-width: 374px) {
+	.registration {
+		&__form {
+			width: 104.4%;
+		}
+
+		&__loyalty-program {
+			width: 104.4%;
+		}
+	}
 }

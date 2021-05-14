@@ -17,7 +17,7 @@
 	}
 
 	&__item {
-		margin-bottom: 16px;
+		margin-bottom: 17px;
 		padding-left: 43px;
 		position: relative;
 	}
@@ -32,5 +32,28 @@
 		background: $white-color;
 		background-image: url(../img/check-icon.svg);
 		background-size: 20px 16px;
+	}
+}
+
+@media (max-width: $max-tablet-width) {
+	.loyalty {
+
+		&__title,
+		&__text,
+		&__item {
+			@include font(16px, 19px, 300);
+		}
+
+		&__title {
+			margin-bottom: 32px;
+		}
+
+		&__text {
+			margin-bottom: 22px;
+		}
+
+		&__item:before {
+			top: 4px;
+		}
 	}
 }

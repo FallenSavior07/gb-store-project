@@ -51,8 +51,22 @@ body {
         text-decoration-line: none;
     }
 
+    &__text {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 400;
+    }
+
+    &__text_pink {
+        color: $button-link-color;
+    }
+
     &__icon {
         fill: $white-color;
+    }
+
+    &__icon_pink {
+        fill: $button-link-color;
     }
 }
 

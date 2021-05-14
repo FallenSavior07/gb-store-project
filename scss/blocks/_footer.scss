@@ -150,7 +150,7 @@
 		}
 
 		&__button {
-			min-width: 96px;
+			width: 96px;
 			padding: 0 18px;
 		}
 
@@ -167,6 +167,27 @@
 
 		&__socials {
 			margin: 0 0 40px 0;
+		}
+	}
+}
+
+@media (max-width: 374px) {
+	.footer {
+		&__input {
+			min-width: 0;
+			width: 59%;
+			/* 203px */
+			padding: 0 6.1%;
+			/* 21px */
+		}
+
+		&__button {
+			min-width: 0;
+			width: 28%;
+			/* 96px */
+			padding: 0 5.2%;
+			/* 18px */
+			word-wrap: break-word;
 		}
 	}
 }
