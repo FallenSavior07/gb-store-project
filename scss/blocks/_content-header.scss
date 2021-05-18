@@ -1,0 +1,31 @@
+.content-header {
+	background-color: $breadcrumb-color;
+
+	&__wrapper {
+		@include flex-y-center;
+		justify-content: space-between;
+		min-height: 148px;
+	}
+
+	&__title {
+		@include font(24px, 29px);
+		color: $pink-color;
+	}
+}
+
+@media (max-width: $max-mobile-width) {
+	.content-header {
+		&__wrapper {
+			@include flex-column-x-center;
+			justify-content: flex-start;
+		}
+
+		&__wrapper_only-title {
+			justify-content: center;
+		}
+
+		&__title {
+			margin: 24px 0 32px 0;
+		}
+	}
+}

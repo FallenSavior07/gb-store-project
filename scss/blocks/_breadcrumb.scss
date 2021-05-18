@@ -1,22 +1,22 @@
 .breadcrumb {
-	background-color: $breadcrumb-color;
+    margin: 0;
 
-	.breadcrumb__wrapper {
-		@include flex-y-center;
-		min-height: 148px;
-	}
+    &__item {
+        @include font(14px, 17px, 300);
+        color: $breadcrumb-link-color;
+        text-transform: uppercase;
+    }
 
-	.breadcrumb__title {
-		@include font(24px, 29px);
-		text-transform: uppercase;
-		color: $pink-color;
-	}
+    &__item_active {
+        @include font(14px, 17px, 700);
+        color: $pink-color;
+    }
 }
 
-@media (max-width: $max-mobile-width) {
-	.breadcrumb {
-		.breadcrumb__wrapper {
-			justify-content: center;
-		}
-	}
+@media (max-width: 374px) {
+    .breadcrumb {
+        &__list {
+            justify-content: center;
+        }
+    }
 }
