@@ -1,44 +1,100 @@
 .brand {
-	display: flex;
-	justify-content: center;
+	@include flex-x-center;
+	min-height: 368px;
 	background-color: $light-pink-color;
 
-	.brand__wrapper {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+	&__left-inner {
+		width: 800px;
+	}
+
+	&__image {
+		width: 100%;
+		height: 100%;
+	}
+
+	&__right-inner {
+		@include flex-column-y-center;
 		width: 708px;
 		padding-left: 92px;
 	}
 
-	.brand__title {
+	&__title {
 		position: relative;
-		font-weight: 900;
-		font-size: 48px;
-		line-height: 58px;
+		@include font(48px, 58px, 900);
 		color: $black-color;
 		text-transform: uppercase;
 	}
 
-	.brand__title::before {
+	&__title::before {
 		content: '';
 		width: 12px;
 		height: 92px;
-		background-color: $pink-color;
 		position: absolute;
 		left: -28px;
 		background-size: 12px 92px;
+		background-color: $pink-color;
 	}
 
-	.brand__subtitle {
-		font-weight: 700;
-		font-size: 32px;
-		line-height: 38px;
+	&__subtitle {
+		@include font(32px, 38px, 700);
 		text-transform: uppercase;
 		color: $black-color;
 	}
 
-	.brand__text_pink {
+	&__text_pink {
 		color: $pink-color;
+	}
+}
+
+@media (max-width: $max-tablet-width) {
+	.brand {
+		&__left-inner {
+			width: 50%;
+			/*384 px*/
+		}
+
+		&__right-inner {
+			width: 41.3%;
+			/*317 px*/
+			padding-left: 8.7%;
+			/*317 px*/
+		}
+
+		&__title {
+			@include font(44px, 53px, 900);
+		}
+
+		&__subtitle {
+			@include font(24px, 29px, 700);
+		}
+	}
+}
+
+@media (max-width: $max-mobile-width) {
+	.brand {
+		min-height: 363px;
+
+		&__left-inner {
+			display: none;
+		}
+
+		&__right-inner {
+			width: 375px;
+			align-items: center;
+			padding-left: 27px;
+		}
+
+		&__title {
+			@include font(38px, 46px, 900);
+		}
+
+		&__title::before {
+			height: 61px;
+			top: 5px;
+		}
+
+		&__subtitle {
+			@include font(20px, 24px, 700);
+		}
 	}
 }

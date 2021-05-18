@@ -1,30 +1,28 @@
 .loyalty {
 
-	.loyalty__title,
-	.loyalty__text,
-	.loyalty__item {
-		font-size: 24px;
-		line-height: 29px;
-		font-weight: 300;
+	&__title,
+	&__text,
+	&__item {
+		@include font(24px, 29px, 300);
 		color: $super-black-color;
 	}
 
-	.loyalty__title {
-		text-transform: uppercase;
+	&__title {
 		margin-bottom: 22px;
+		text-transform: uppercase;
 	}
 
-	.loyalty__text {
+	&__text {
 		margin-bottom: 21px;
 	}
 
-	.loyalty__item {
-		margin-bottom: 16px;
+	&__item {
+		margin-bottom: 17px;
 		padding-left: 43px;
 		position: relative;
 	}
 
-	.loyalty__item:before {
+	&__item:before {
 		content: ' ';
 		width: 20px;
 		height: 16px;
@@ -34,5 +32,28 @@
 		background: $white-color;
 		background-image: url(../img/check-icon.svg);
 		background-size: 20px 16px;
+	}
+}
+
+@media (max-width: $max-tablet-width) {
+	.loyalty {
+
+		&__title,
+		&__text,
+		&__item {
+			@include font(16px, 19px, 300);
+		}
+
+		&__title {
+			margin-bottom: 32px;
+		}
+
+		&__text {
+			margin-bottom: 22px;
+		}
+
+		&__item:before {
+			top: 4px;
+		}
 	}
 }

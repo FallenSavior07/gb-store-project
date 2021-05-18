@@ -1,26 +1,23 @@
 .socials {
-	width: 155px;
-	display: flex;
-	justify-content: space-between;
+	width: 148px;
+	@include flex-space-between;
 
-	.socials__link {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background: $white-color;
+	&__link {
 		width: 32px;
 		height: 32px;
+		@include flex-x-y-center;
+		background: $white-color;
 	}
 
-	.socials__icon {
+	&__icon {
 		fill: $super-black-color;
 	}
 
-	.socials__link:hover {
+	&__link:hover {
 		background-color: $pink-color;
 	}
 
-	.socials__link:hover .socials__icon {
+	&__link:hover .socials__icon {
 		fill: $white-color;
 	}
 }
