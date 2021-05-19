@@ -16,6 +16,7 @@
 		min-height: 32px;
 		position: relative;
 		@include flex-space-between;
+		align-items: center;
 	}
 
 	&__image {
@@ -30,6 +31,7 @@
 	.header__menu-button {
 		border: none;
 		background-color: transparent;
+		height: 23px;
 	}
 
 	.header__nav {
@@ -40,8 +42,12 @@
 		left: 100%;
 	}
 
-	.header__menu-button:active+.header__nav,
-	.header__menu-button:focus+.header__nav {
+	// .header__menu-button:active+.header__nav,
+	// .header__menu-button:focus+.header__nav {
+	// 	display: block;
+	// }
+
+	.header__menu-button:checked+.header__nav {
 		display: block;
 	}
 

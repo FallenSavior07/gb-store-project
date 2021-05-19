@@ -1,0 +1,150 @@
+.product {
+	&__carousel {
+		min-height: 777px;
+		background: $product-bkg-color;
+	}
+
+	&__inner {
+		width: 1141px;
+		position: relative;
+		margin-top: -60px;
+		margin-left: auto;
+		margin-right: auto;
+		z-index: 1;
+		@include flex-column-x-center;
+		padding: 64px 0 65px 0;
+		min-height: 601px;
+		background-color: $white-color;
+		border: 1px solid #EAEAEA;
+	}
+
+	&__category {
+		position: relative;
+		margin: 0 0 28px 0;
+		@include font(14px, 17px, 400);
+		color: $pink-color;
+		text-align: center;
+	}
+
+	&__category::after {
+		content: '';
+		width: 63px;
+		height: 3px;
+		position: absolute;
+		top: 30px;
+		right: 40px;
+		background-size: 63px 3px;
+		background-color: $pink-color;
+	}
+
+	&__name {
+		margin: 0 0 48px 0;
+		@include font(18px, 22px, 300);
+		color: $product-name-color;
+		text-align: center;
+	}
+
+	&__description {
+		width: 555px;
+		margin: 0 0 32px 0;
+		@include font (14px, 17px, 300);
+		text-align: center;
+		color: $product-description-color;
+	}
+
+	&__price {
+		@include font (24px, 29px, 300);
+		color: $product-price-color;
+	}
+
+	&__hr {
+		margin: 65px 0;
+		width: 641px;
+		border: 1px solid #EAEAEA;
+		opacity: 0.75;
+	}
+
+	&__menu-inner {
+		@include flex-space-between;
+		flex-wrap: wrap;
+		width: 373px;
+		margin: 0 0 49px 0;
+	}
+
+	&__button {
+		@include flex-space-between;
+		padding: 14px 56px 8px 23px;
+		min-width: 211px;
+		min-height: 47px;
+	}
+}
+
+@media (max-width: $max-tablet-width) {
+	.product {
+		&__carousel {
+			min-height: 624px;
+		}
+
+		&__inner {
+			margin-top: 0px;
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: $max-mobile-width) {
+	.product {
+
+		&__name {
+			margin: 0 0 32px 0;
+		}
+
+		&__description {
+			width: 326px;
+			@include font (14px, 20px, 300);
+		}
+
+		&__price {
+			@include font (24px, 31px, 300);
+		}
+
+		&__hr {
+			margin: 32px 0 49px 0;
+			width: 175px;
+		}
+
+		&__menu-inner {
+			width: 304px;
+			margin: 0 0 65px 0;
+		}
+
+		&__button {
+			@include flex-space-between;
+			padding: 14px 56px 8px 23px;
+			min-width: 211px;
+			min-height: 47px;
+		}
+	}
+}
+
+@media (max-width: 374px) {
+	.product {
+		&__carousel {
+			min-height: 0;
+		}
+
+		&__description {
+			width: 87%;
+		}
+
+		&__menu-inner {
+			width: 81%;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__menu {
+			margin-bottom: 20px;
+		}
+	}
+}
