@@ -28,13 +28,13 @@
 		cursor: pointer;
 	}
 
-	.header__menu-button {
+	&__menu-button {
 		border: none;
 		background-color: transparent;
 		height: 23px;
 	}
 
-	.header__nav {
+	&__nav {
 		display: none;
 		position: absolute;
 		z-index: 1;
@@ -42,12 +42,7 @@
 		left: 100%;
 	}
 
-	// .header__menu-button:active+.header__nav,
-	// .header__menu-button:focus+.header__nav {
-	// 	display: block;
-	// }
-
-	.header__menu-button:checked+.header__nav {
+	&__menu-button:checked+.header__nav {
 		display: block;
 	}
 
@@ -81,7 +76,7 @@
 			margin-right: 3.4%;
 		}
 
-		.header__nav {
+		&__nav {
 			left: 0%;
 		}
 	}
@@ -93,7 +88,7 @@
 			justify-content: flex-end;
 		}
 
-		.header__nav {
+		&__nav {
 			left: -50%;
 		}
 
