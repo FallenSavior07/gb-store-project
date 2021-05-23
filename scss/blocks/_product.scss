@@ -7,6 +7,7 @@
 	&__inner {
 		width: 1141px;
 		position: relative;
+		box-sizing: border-box;
 		margin-top: -60px;
 		margin-left: auto;
 		margin-right: auto;
@@ -21,7 +22,7 @@
 	&__category {
 		position: relative;
 		margin: 0 0 28px 0;
-		@include font(14px, 17px, 400);
+		@include font(14px, 17px, 300);
 		color: $pink-color;
 		text-align: center;
 	}

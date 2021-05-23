@@ -60,6 +60,7 @@
 @media (max-width: $max-tablet-width) {
 	.filter {
 		&__list-inner {
+			box-sizing: border-box;
 			top: 0;
 			left: 0;
 		}
@@ -79,6 +80,8 @@
 			width: 37px;
 			height: 25px;
 		}
+
+		&__list-inner {}
 	}
 }
 

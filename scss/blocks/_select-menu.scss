@@ -5,6 +5,10 @@
 	color: $link-color;
 	@include font (14px, 17px, 400);
 
+	&__title {
+		@include font (14px, 17px, 400);
+	}
+
 	&__icon {
 		margin-left: 10px;
 		fill: $link-color;
@@ -61,6 +65,10 @@
 @media (max-width: $max-mobile-width) {
 	.select-menu {
 		@include font (10px, 12px);
+
+		&__title {
+			@include font (10px, 12px);
+		}
 
 		&__icon {
 			margin-left: 10px;

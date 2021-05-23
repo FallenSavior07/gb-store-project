@@ -12,8 +12,9 @@
 	}
 
 	&__title {
-		@include font(20px, 24px);
 		margin-bottom: 16px;
+		@include font(20px, 24px);
+		text-align: center;
 	}
 
 	&__descr {

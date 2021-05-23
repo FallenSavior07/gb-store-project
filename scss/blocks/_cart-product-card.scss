@@ -73,6 +73,11 @@
 			right: 12px;
 		}
 
+		&__exit-icon {
+			width: 10px;
+			height: 11px;
+		}
+
 		&__item {
 			margin-bottom: 4px;
 			@include font(16px, 19px);

@@ -1,5 +1,6 @@
 .header {
 	background-color: $black-color;
+	box-sizing: content-box;
 
 	&__wrapper {
 		min-height: 75px;

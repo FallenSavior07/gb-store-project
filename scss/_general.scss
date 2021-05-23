@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    width: 71.3%;
+    width: 1140px;
     /* 1140 px*/
     margin: 0 auto;
 }
@@ -121,6 +121,12 @@ body {
     }
 
     .products-container {
-        width: 91.5%;
+        width: 360px;
+    }
+}
+
+@media (max-width: 374px) {
+    .products-container {
+        width: 96%;
     }
 }
