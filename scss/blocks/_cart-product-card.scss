@@ -24,7 +24,7 @@
 		right: 22px;
 		border: none;
 		background-color: transparent;
-		fill: #6F6E6E;
+		fill: $link-color;
 		cursor: pointer;
 	}
 
@@ -44,7 +44,7 @@
 		border: 1px solid #EAEAEA;
 		@include font(18px, 22px);
 		text-align: center;
-		color: #656565;
+		color: $cart-product-card-input-color;
 		outline: none;
 	}
 }

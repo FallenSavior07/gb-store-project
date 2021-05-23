@@ -6,7 +6,7 @@
 	}
 
 	&__title {
-		@include font(24px, 29px);
+		@include font(24px, 29px, 700);
 		color: $pink-color;
 		text-transform: uppercase;
 	}
