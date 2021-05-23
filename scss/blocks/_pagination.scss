@@ -1,0 +1,36 @@
+.pagination {
+	width: 283px;
+	height: 43px;
+	border: 1px solid #EBEBEB;
+
+	&__list {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 12px 15px;
+	}
+
+	&__icon {
+		fill: $super-black-color;
+	}
+
+	&__link {
+		display: block;
+		@include font(16px, 19px, 300);
+		color: $breadcrumb-link-color;
+	}
+
+	&__link_arrow {
+		line-height: 16px;
+	}
+
+	&__link:hover {
+		color: $product-price-color;
+	}
+}
+
+@media (max-width: 374px) {
+	.pagination {
+		width: 79%;
+	}
+}

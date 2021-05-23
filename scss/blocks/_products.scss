@@ -1,11 +1,16 @@
 .products {
 	&__wrapper {
+		position: relative;
 		@include flex-column-x-center;
 		padding: 97px 0 96px 0;
 	}
 
 	&__wrapper_product-page {
 		padding: 81px 0;
+	}
+
+	&__wrapper_catalog-page {
+		padding: 51px 0 96px 0;
 	}
 
 	&__title {
@@ -18,11 +23,32 @@
 		color: $grey-color;
 	}
 
+	&__inner {
+		width: 100%;
+		@include flex-x-center;
+	}
+
+	&__filter {
+		position: absolute;
+		top: 51px;
+		left: 16px;
+	}
+
+	&__menu-inner {
+		@include flex-space-between;
+		flex-wrap: wrap;
+		width: 296px;
+	}
+
 	&__list {
 		@include flex-space-between;
 		flex-wrap: wrap;
 		margin: 48px 0 18px 0;
 		width: 100%;
+	}
+
+	&__list_catalog {
+		margin: 65px 0 18px 0;
 	}
 
 	&__item {
@@ -33,7 +59,6 @@
 	}
 
 	&__button {
-		background-color: $white-color;
 		padding: 14px 38px;
 	}
 }
@@ -48,8 +73,22 @@
 			padding: 129px 0 112px 0;
 		}
 
+		&__wrapper_catalog-page {
+			padding: 24px 0 63px 0;
+		}
+
 		&__title {
 			margin-bottom: 3px;
+		}
+
+		&__inner {
+			justify-content: space-between;
+		}
+
+		&__filter {
+			position: relative;
+			top: 0;
+			left: 0;
 		}
 
 		&__list {
@@ -58,6 +97,10 @@
 
 		&__list_product-page {
 			margin: 0;
+		}
+
+		&__list_catalog {
+			margin: 40px 0 23px 0;
 		}
 
 		&__item {
@@ -80,6 +123,19 @@
 			padding: 64px 0 48px 0;
 		}
 
+		&__wrapper_catalog-page {
+			padding: 26px 0 64px 0;
+		}
+
+		&__inner {
+			width: 360px;
+			align-items: center;
+		}
+
+		&__menu-inner {
+			width: 260px;
+		}
+
 		&__list {
 			justify-content: center;
 			margin: 65px 0 25px 0;
@@ -87,6 +143,10 @@
 
 		&__list_product-page {
 			margin: 0;
+		}
+
+		&__list_catalog {
+			margin: 32px 0 13px 0;
 		}
 
 		&__item {
@@ -97,6 +157,21 @@
 
 @media (max-width: 374px) {
 	.products {
+		&__inner {
+			flex-direction: column-reverse;
+			justify-content: flex-start;
+			width: 100%;
+		}
+
+		&__menu-inner {
+			width: 100%;
+			margin: 0 0 15px 0;
+		}
+
+		&__menu {
+			margin-bottom: 20px;
+		}
+
 		&__item {
 			width: 100%;
 		}

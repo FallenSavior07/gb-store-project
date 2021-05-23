@@ -1,0 +1,46 @@
+.filter-item {
+	&__title {
+		position: relative;
+		margin: 8px 0 11px 17px;
+		@include font;
+		color: $link-color;
+	}
+
+	&__title::before {
+		content: '';
+		width: 5px;
+		height: 37px;
+		position: absolute;
+		top: -8.5px;
+		left: -17px;
+		background-color: $product-price-color;
+	}
+
+	&__title_hover {
+		color: $product-price-color;
+	}
+
+	&__title_margin_middle {
+		margin: 32px 0 11px 17px;
+	}
+
+	&__title_margin_bottom {
+		margin: 26px 0 11px 17px;
+	}
+
+	&__hr {
+		margin: 0;
+		background-color: $hr-color;
+		opacity: 0.5;
+	}
+
+	&__list {
+		margin: 13px 0 0 17px;
+	}
+
+	&__item {
+		margin: 11px 0 0 0;
+		@include font;
+		color: $link-color;
+	}
+}

@@ -6,16 +6,18 @@
 	@include font (14px, 17px, 400);
 
 	&__icon {
-		margin-left: 9px;
+		margin-left: 10px;
 		fill: $link-color;
 	}
 
 	&__radio-wrapper {
 		position: absolute;
 		top: 17px;
+		left: -9px;
 		z-index: 2;
 		display: none;
 		padding: 10px 0 0 31px;
+		min-width: 72px;
 		width: 100%;
 		background: $white-color;
 		box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -75,5 +77,9 @@
 		&__radio-label:before {
 			top: 1px;
 		}
+	}
+
+	.select-menu_catalog {
+		@include font (12px, 14px, 400);
 	}
 }
