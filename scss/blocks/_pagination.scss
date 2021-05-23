@@ -5,9 +5,10 @@
 
 	&__list {
 		width: 100%;
-		display: flex;
-		justify-content: space-between;
+		@include flex-space-between;
+		align-items: center;
 		padding: 12px 15px;
+		box-sizing: border-box;
 	}
 
 	&__icon {
@@ -21,6 +22,7 @@
 	}
 
 	&__link_arrow {
+		height: 14px;
 		line-height: 16px;
 	}
 

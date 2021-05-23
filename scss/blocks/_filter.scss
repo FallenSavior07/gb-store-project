@@ -34,6 +34,7 @@
 		top: -13px;
 		left: -16px;
 		width: 360px;
+		box-sizing: border-box;
 		padding: 46px 15px 16px 17px;
 		background-color: $white-color;
 		box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -60,7 +61,6 @@
 @media (max-width: $max-tablet-width) {
 	.filter {
 		&__list-inner {
-			box-sizing: border-box;
 			top: 0;
 			left: 0;
 		}
@@ -80,8 +80,6 @@
 			width: 37px;
 			height: 25px;
 		}
-
-		&__list-inner {}
 	}
 }
 

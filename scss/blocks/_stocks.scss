@@ -1,7 +1,7 @@
 .stocks {
 	&__list {
 		min-height: 470px;
-		margin-top: 63px;
+		margin: 63px 0 0 0;
 		@include flex-space-between;
 		flex-wrap: wrap;
 		align-content: space-between;
@@ -13,8 +13,9 @@
 		min-height: 260px;
 		@include flex-x-y-center;
 		flex-direction: column;
-		background-size: cover;
+		background-color: rgba(33, 22, 22, 0.7);
 		background-position: center;
+		background-size: cover;
 	}
 
 	&__item_theme_women {
@@ -40,7 +41,7 @@
 	.stocks {
 		&__list {
 			min-height: 303px;
-			margin-top: 20px;
+			margin: 20px 0 0 0;
 		}
 
 		&__item {
@@ -60,7 +61,7 @@
 	.stocks {
 		&__list {
 			min-height: 948px;
-			margin-top: 64px;
+			margin: 64px 0 0 0;
 			justify-content: center;
 		}
 

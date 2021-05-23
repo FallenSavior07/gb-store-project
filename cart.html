@@ -61,7 +61,7 @@
 							<ul class="nav-item__list">
 								<li class="nav-item__item"><a class="link" href="#">Accessories</a></li>
 								<li class="nav-item__item"><a class="link" href="#">Jackets & coats</a></li>
-								<li class="nav-item__item"><a class="link" link href="#">Polos</a></li>
+								<li class="nav-item__item"><a class="link" href="#">Polos</a></li>
 								<li class="nav-item__item"><a class="link" href="#">T-shirts</a></li>
 								<li class="nav-item__item"><a class="link" href="#">Shirts</a></li>
 							</ul>
@@ -105,13 +105,14 @@
 		</section>
 		<section class="cart">
 			<div class="cart__wrapper container">
+				<h2 class="visually-hidden">Cart</h2>
 				<div class="cart__inner">
 					<ul class="cart__list">
 						<li class="cart__item cart-product-card">
 							<img class="cart-product-card__image" src="img/product-3.jpg" alt="product-1" width="262"
 								height="306">
 							<div class="cart-product-card__inner">
-								<h2 class="cart-product-card__name">mango people t-shirt</h2>
+								<h3 class="cart-product-card__name">mango people t-shirt</h3>
 								<button class="cart-product-card__exit-button" type="button"><svg
 										class="cart-product-card__exit-icon" width="18" height="18" viewBox="0 0 18 18"
 										xmlns="http://www.w3.org/2000/svg">
@@ -133,7 +134,7 @@
 							<img class="cart-product-card__image" src="img/cart-product-2.jpg" alt="product-2"
 								width="262" height="306">
 							<div class="cart-product-card__inner">
-								<h2 class="cart-product-card__name">mango people t-shirt</h2>
+								<h3 class="cart-product-card__name">mango people t-shirt</h3>
 								<button class="cart-product-card__exit-button" type="button"><svg
 										class="cart-product-card__exit-icon" width="18" height="18" viewBox="0 0 18 18"
 										xmlns="http://www.w3.org/2000/svg">
@@ -152,13 +153,8 @@
 							</div>
 					</ul>
 					<div class="cart__button-wrapper">
-						<button class="cart__button button" type="button"><a class="cart__button-link text"
-								href="#">clear
-								shopping
-								cart</a></button>
-						<button class="cart__button button" type="button"><a class="cart__button-link text"
-								href="#">continue
-								shopping</a></button>
+						<button class="cart__button button" type="button">clear shopping cart</button>
+						<a class="cart__button cart__button_link button" href="#">continue shopping</a>
 					</div>
 				</div>
 				<form class="cart__form cart-form" action="#">
@@ -176,14 +172,10 @@
 							<p class="cart-form__text cart-form__text_grand-total">grand total<span
 									class="cart-form__price-text cart-form__price-text_grand">$900</span></p>
 							<hr class="cart-form__line">
-							<button type="submit" class="cart-form__button button"><a
-									class="button__link button__link_black" href="#">proceed to
-									checkout</a>
-							</button>
+							<button type="submit" class="cart-form__button button">proceed to checkout</button>
 						</div>
 					</div>
-			</div>
-			</form>
+				</form>
 			</div>
 		</section>
 	</main>

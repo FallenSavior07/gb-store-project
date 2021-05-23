@@ -8,17 +8,17 @@
 	}
 
 	&__title {
-		margin-bottom: 22px;
+		margin: 0 0 22px 0;
 		text-transform: uppercase;
 	}
 
 	&__text {
-		margin-bottom: 21px;
+		margin: 0 0 21px 0;
 	}
 
 	&__item {
-		margin-bottom: 17px;
-		padding-left: 43px;
+		margin: 0 0 17px 0;
+		padding: 0 0 0 43px;
 		position: relative;
 	}
 
@@ -29,8 +29,8 @@
 		position: absolute;
 		left: 0;
 		top: 8px;
-		background: $white-color;
-		background-image: url(../img/check-icon.svg);
+		background-color: $white-color;
+		background-image: url(../img/check.svg);
 		background-size: 20px 16px;
 	}
 }
@@ -45,11 +45,11 @@
 		}
 
 		&__title {
-			margin-bottom: 32px;
+			margin: 0 0 32px 0;
 		}
 
 		&__text {
-			margin-bottom: 22px;
+			margin: 0 0 22px 0;
 		}
 
 		&__item:before {
