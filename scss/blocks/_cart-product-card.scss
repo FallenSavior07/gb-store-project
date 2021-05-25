@@ -12,7 +12,7 @@
 	&__name {
 		display: block;
 		width: 262px;
-		margin-bottom: 42px;
+		margin: 0 0 42px 0;
 		@include font(24px, 29px);
 		color: $super-black-color;
 		text-transform: uppercase;
@@ -24,12 +24,12 @@
 		right: 22px;
 		border: none;
 		background-color: transparent;
-		fill: #6F6E6E;
+		fill: $link-color;
 		cursor: pointer;
 	}
 
 	&__item {
-		margin-bottom: 6px;
+		margin: 0 0 6px 0;
 		@include font(22px, 26px);
 		color: $cart-product-card-text;
 	}
@@ -44,7 +44,7 @@
 		border: 1px solid #EAEAEA;
 		@include font(18px, 22px);
 		text-align: center;
-		color: #656565;
+		color: $cart-product-card-input-color;
 		outline: none;
 	}
 }
@@ -64,7 +64,7 @@
 
 		&__name {
 			width: 144px;
-			margin-bottom: 26px;
+			margin: 0 0 26px 0;
 			@include font(16px, 19px);
 		}
 
@@ -73,8 +73,13 @@
 			right: 12px;
 		}
 
+		&__exit-icon {
+			width: 10px;
+			height: 11px;
+		}
+
 		&__item {
-			margin-bottom: 4px;
+			margin: 0 0 4px 0;
 			@include font(16px, 19px);
 		}
 
@@ -92,7 +97,7 @@
 
 		&__name {
 			width: 67%;
-			margin-bottom: 12%;
+			margin: 0 0 12% 0;
 		}
 	}
 }

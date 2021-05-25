@@ -30,21 +30,21 @@
 		min-height: 50px;
 		padding: 17px 40px 16px 39px;
 		border: 1px solid #A4A4A4;
-	}
-
-	&__button-link {
+		@include font (14px, 17px, 300);
 		text-transform: uppercase;
 		text-decoration-line: none;
 		color: $super-black-color;
 	}
 
+	&__button_link {
+		display: block;
+		box-sizing: border-box
+	}
+
 	&__button:hover {
 		border: 1px solid #FF6A6A;
 		background-color: $pink-color;
-	}
-
-	&__button:hover .cart__button-link {
-		color: $white-color;
+		color: $white-color
 	}
 
 	&__form {
@@ -65,7 +65,7 @@
 		}
 
 		&__list {
-			width: 100%;
+			width: 652px;
 			margin: 0 0 31px 0;
 		}
 
@@ -74,12 +74,12 @@
 		}
 
 		&__button-wrapper {
-			width: 69%;
+			width: 508px;
 			margin: 0 0 64px 0;
 		}
 
 		&__form {
-			width: 100%;
+			width: 736px;
 		}
 	}
 }
@@ -91,11 +91,12 @@
 		}
 
 		&__list {
+			width: 360px;
 			margin: 0 0 30px 0;
 		}
 
 		&__button-wrapper {
-			width: 100%;
+			width: 358px;
 			margin: 0 0 58px 0;
 		}
 
@@ -108,15 +109,27 @@
 		&__button-link {
 			@include font (12px, 14px)
 		}
+
+		&__form {
+			width: 100%;
+		}
 	}
 }
 
 @media (max-width: 374px) {
 	.cart {
+		&__list {
+			width: 100%;
+		}
+
 		&__button {
 			min-width: 0;
 			width: 40.2%;
 			padding: 3.3% 6.6%;
+		}
+
+		&__button-wrapper {
+			width: 100%;
 		}
 	}
 }

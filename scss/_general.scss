@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 14px;
     line-height: 17px;
     font-weight: 400;
@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    width: 71.3%;
+    width: 1140px;
     /* 1140 px*/
     margin: 0 auto;
 }
@@ -32,49 +32,19 @@ body {
     text-transform: uppercase;
 }
 
-.text {
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 300;
-}
-
 .link {
     text-decoration-line: none;
     color: $link-color;
 }
 
+.link:hover {
+    color: $pink-color;
+}
+
 .button {
-    border: 1px solid #FF6A6A;
     background: transparent;
     text-align: center;
     cursor: pointer;
-
-    &__link {
-        font-size: 16px;
-        line-height: 19px;
-        color: $button-link-color;
-        text-decoration-line: none;
-    }
-
-    &__link_black {
-        color: $super-black-color;
-    }
-
-    &__text {
-        font-size: 14px;
-        line-height: 17px;
-        font-weight: 400;
-    }
-
-    &__text_size_m {
-        font-size: 16px;
-        line-height: 19px;
-        font-weight: 400;
-    }
-
-    &__text_pink {
-        color: $button-link-color;
-    }
 
     &__icon {
         fill: $white-color;
@@ -92,11 +62,8 @@ body {
 
 .button:hover {
     background-color: $pink-color;
-}
-
-.button:hover .button__link,
-.button:hover .button__text {
     color: $white-color;
+    border: 1px solid #FF6A6A;
 }
 
 .button:hover .button__icon {
@@ -121,6 +88,12 @@ body {
     }
 
     .products-container {
-        width: 91.5%;
+        width: 360px;
+    }
+}
+
+@media (max-width: 374px) {
+    .products-container {
+        width: 96%;
     }
 }

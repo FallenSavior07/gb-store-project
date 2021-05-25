@@ -1,5 +1,6 @@
 .header {
 	background-color: $black-color;
+	box-sizing: content-box;
 
 	&__wrapper {
 		min-height: 75px;
@@ -8,7 +9,7 @@
 	}
 
 	&__logo {
-		margin-right: 41px;
+		margin: 0 41px 0 0;
 	}
 
 	&__right-inner {
@@ -69,11 +70,11 @@
 @media (max-width: $max-tablet-width) {
 	.header {
 		&__left-inner {
-			margin-left: 2.2%;
+			margin: 0 0 0 2.2%;
 		}
 
 		&__right-inner {
-			margin-right: 3.4%;
+			margin: 0 3.4% 0 0;
 		}
 
 		&__nav {
